@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                android:id="@+id/popuppublisher_text_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yayın Evi Bilgileri"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textColor="@android:color/black"
+                android:maxLines="1"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="23dp"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/popuppublisher_relative_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+            <!-- INPUT -->
+            <com.furkanyilmaz.customfonts.EditText_Poppins_Regular
+                android:id="@+id/popuppublisher_edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/publisher_name"
+                android:maxLines="1"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="13sp" />
+
+            <!-- ICON -->
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/popupcategory_relative_bookcount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="25dp"
+            android:orientation="horizontal">
+
+            <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                android:id="@+id/popuppublisher_button_showbooks"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/blue_border_rounded_blue2"
+                android:maxLines="1"
+                android:paddingLeft="17dp"
+                android:paddingRight="17dp"
+                android:text="Kitapları Göster"
+                android:textColor="#FFFFFF"
+                android:textSize="9sp"
+                android:visibility="gone" />
+
+            <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                android:id="@+id/popuppublisher_textview_bookcount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@android:color/transparent"
+                android:maxLines="1"
+                android:text="Kayıtlı Kitap Sayısı: 0"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="17dp"
+            android:paddingTop="20dp"
+            android:paddingRight="17dp"
+            android:paddingBottom="17dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="left"
+                    android:orientation="vertical"
+                    android:paddingRight="3dp">
+
+                    <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                        android:id="@+id/popuppublisher_button_exit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blue_border_rounded_orange"
+                        android:maxLines="1"
+                        android:text="İptal"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp">
+
+                    <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                        android:id="@+id/popuppublisher_button_remove"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blue_border_rounded_red"
+                        android:maxLines="1"
+                        android:text="Sil"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:orientation="vertical"
+                    android:paddingLeft="3dp">
+
+                    <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                        android:id="@+id/popuppublisher_button_save"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/blue_border_rounded_blue"
+                        android:maxLines="1"
+                        android:text="Güncelle"
+                        android:textColor="#FFFFFF"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

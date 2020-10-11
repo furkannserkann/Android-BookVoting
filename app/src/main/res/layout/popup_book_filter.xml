@@ -1,0 +1,636 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:focusableInTouchMode="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:padding="12dp"
+                            app:srcCompat="@drawable/ic_filter" />
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:id="@+id/popupcategory_text_head"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:paddingTop="7dp"
+                            android:paddingRight="2dp"
+                            android:paddingBottom="7dp"
+                            android:text="DETAYLI ARAMA"
+                            android:textColor="@android:color/black"
+                            android:textSize="10sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center|right"
+                            android:orientation="vertical">
+
+                            <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                                android:id="@+id/bookfiltre_button_clearfilter"
+                                android:layout_width="110dp"
+                                android:layout_height="25dp"
+                                android:layout_marginTop="4dp"
+                                android:background="@drawable/blue_border_rounded_red"
+                                android:text="Herşeyi Temizle"
+                                android:textColor="@android:color/white"
+                                android:textSize="10sp" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@android:color/darker_gray"
+                        android:orientation="vertical" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/blue_border_rounded_cornwe"
+                    android:gravity="center">
+
+                    <!-- INPUT -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="7dp">
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="10dp"
+                            android:text="Yayın Tarihi"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:id="@+id/bookfilter_linear_pubdate1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                                    android:id="@+id/bookfiltre_text_date1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:cursorVisible="false"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:hint="Başlangıç Tarihi"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                                <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                                    android:id="@+id/bookfiltre_button_date1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/blue_border_rounded_green"
+                                    android:text="Seç"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="1dp"
+                                android:layout_height="match_parent"
+                                android:background="@android:color/darker_gray"
+                                android:orientation="vertical">
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/bookfilter_linear_pubdate2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                                    android:id="@+id/bookfiltre_text_date2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:background="@android:color/transparent"
+                                    android:cursorVisible="false"
+                                    android:ems="10"
+                                    android:gravity="center"
+                                    android:hint="Bitiş Tarihi"
+                                    android:inputType="text"
+                                    android:maxLines="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                                <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                                    android:id="@+id/bookfiltre_button_date2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="25dp"
+                                    android:layout_marginTop="4dp"
+                                    android:background="@drawable/blue_border_rounded_green"
+                                    android:text="Seç"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12.7dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/blue_border_rounded_cornwe"
+                    android:gravity="center">
+
+                    <!-- INPUT -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="7dp">
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp"
+                            android:text="Yayın Evi"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                                    android:id="@+id/bookfiltre_text_publisher"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:cursorVisible="false"
+                                    android:gravity="center"
+                                    android:hint="Seçilmedi"
+                                    android:inputType="textMultiLine"
+                                    android:paddingRight="5dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingBottom="4dp"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+
+                                <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                                    android:id="@+id/bookfiltre_button_publisher"
+                                    android:layout_width="75dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/blue_border_rounded_green"
+                                    android:text="Seç"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12.7dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/blue_border_rounded_cornwe"
+                    android:gravity="center">
+
+                    <!-- INPUT -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="7dp">
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp"
+                            android:text="Kategori"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                                    android:id="@+id/bookfiltre_text_category"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:background="@android:color/transparent"
+                                    android:gravity="center"
+                                    android:hint="Seçilmedi"
+                                    android:inputType="textMultiLine"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp"
+                                    android:paddingRight="5dp"
+                                    android:paddingLeft="4dp"
+                                    android:paddingBottom="4dp" />
+
+                                <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                                    android:id="@+id/bookfiltre_button_category"
+                                    android:layout_width="75dp"
+                                    android:layout_height="25dp"
+                                    android:background="@drawable/blue_border_rounded_green"
+                                    android:text="Seç"
+                                    android:textColor="@android:color/white"
+                                    android:textSize="10sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12.7dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/blue_border_rounded_cornwe"
+                    android:gravity="center">
+
+                    <!-- INPUT -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="7dp">
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp"
+                            android:text="Sayfa Sayısı"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/blue_border_rounded_cornwe"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/bookfiltre_text_pagenumber1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@android:color/transparent"
+                                    android:ems="10"
+                                    android:hint="En Az"
+                                    android:inputType="numberSigned"
+                                    android:maxLines="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="5dp"
+                                android:layout_weight="1"
+                                android:background="@drawable/blue_border_rounded_cornwe"
+                                android:orientation="horizontal">
+
+                                <EditText
+                                    android:id="@+id/bookfiltre_text_pagenumber2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="15dp"
+                                    android:layout_marginRight="15dp"
+                                    android:background="@android:color/transparent"
+                                    android:ems="10"
+                                    android:hint="En Çok"
+                                    android:inputType="numberSigned"
+                                    android:maxLines="1"
+                                    android:textColor="@android:color/black"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="12.7dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@drawable/blue_border_rounded_cornwe"
+                    android:gravity="center">
+
+                    <!-- INPUT -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:padding="7dp">
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:paddingTop="7dp"
+                            android:paddingBottom="7dp"
+                            android:text="Puan"
+                            android:textColor="@android:color/black"
+                            android:textSize="15sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/bookfiltre_check_5"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <RatingBar
+                                    android:id="@+id/bookfiltre_rating5"
+                                    style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"
+                                    android:rating="5"
+                                    android:stepSize="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/bookfiltre_check_4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <RatingBar
+                                    android:id="@+id/bookfiltre_rating4"
+                                    style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"
+                                    android:rating="4"
+                                    android:stepSize="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/bookfiltre_check_3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <RatingBar
+                                    android:id="@+id/bookfiltre_rating3"
+                                    style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"
+                                    android:rating="3"
+                                    android:stepSize="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/bookfiltre_check_2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <RatingBar
+                                    android:id="@+id/bookfiltre_rating2"
+                                    style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"
+                                    android:rating="2"
+                                    android:stepSize="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/bookfiltre_check_1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <RatingBar
+                                    android:id="@+id/bookfiltre_rating1"
+                                    style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="5"
+                                    android:rating="1"
+                                    android:stepSize="1" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <CheckBox
+                                    android:id="@+id/bookfiltre_check_0"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content" />
+
+                                <RatingBar
+                                    android:id="@+id/bookfiltre_rating0"
+                                    style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:numStars="0"
+                                    android:rating="0"
+                                    android:stepSize="1" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/register_relative_buttons"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="12.7dp"
+                    android:paddingRight="15dp"
+                    android:paddingBottom="15dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                            android:id="@+id/bookfilter_button_exit"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blue_border_rounded_orange"
+                            android:text="İptal"
+                            android:textColor="@android:color/white" />
+
+                        <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                            android:id="@+id/bookfilter_button_save"
+                            android:layout_width="100dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:layout_weight="1"
+                            android:background="@drawable/blue_border_rounded_blue2"
+                            android:text="Ara"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                android:id="@+id/popuppublisher_text_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/add_new_publisher"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:orientation="vertical"
+                android:layout_marginBottom="23dp"
+                android:background="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/popupcategory_relative_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+            <!-- INPUT -->
+            <com.furkanyilmaz.customfonts.EditText_Poppins_Regular
+                android:id="@+id/popupcategory_edittext_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:hint="@string/publisher_name"
+                android:maxLines="1"
+                android:paddingLeft="17dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="12sp" />
+
+            <!-- ICON -->
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingTop="20dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="17dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                    android:id="@+id/popupcategory_button_exit"
+                    android:layout_width="115dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/blue_border_rounded_orange"
+                    android:textColor="@android:color/white"
+                    android:text="İptal" />
+
+                <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                    android:id="@+id/popupcategory_button_save"
+                    android:layout_width="115dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/blue_border_rounded_blue"
+                    android:textColor="@android:color/white"
+                    android:text="Kaydet" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

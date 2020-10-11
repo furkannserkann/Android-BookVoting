@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|left"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/itemlistuser_profileimage"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:padding="3dp"
+                android:src="@drawable/user"
+                app:civ_border_color="@android:color/black"
+                app:civ_border_width="1dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:orientation="vertical">
+
+            <com.furkanyilmaz.customfonts.MyTextView_Poppins_Medium
+                android:id="@+id/itemlistuser_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="#333232"
+                android:textSize="20sp" />
+
+            <com.furkanyilmaz.customfonts.MyTextView_Poppins_Medium
+                android:id="@+id/itemlistuser_text_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail"
+                android:textColor="#333232"
+                android:textSize="11sp"
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center|right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <com.furkanyilmaz.customfonts.MyTextView_Poppins_Medium
+                android:id="@+id/itemlistuser_text_yetki"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="16dp"
+                android:gravity="center_horizontal"
+                android:text="Yetkilendirme"
+                android:textColor="#333232"
+                android:textSize="13sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".user.ActivityUser">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <LinearLayout
+            android:id="@+id/activityuser_linear_frag1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Anasayfa"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Main"
+                    android:textColor="@android:color/black"
+                    android:textSize="22sp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activityuser_linear_frag2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center|top"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/search_linear_search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="7dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/blue_border_rounded_cornwe2"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center|right"
+                        android:orientation="vertical">
+
+                        <com.furkanyilmaz.customfonts.EditText_Poppins_Regular
+                            android:id="@+id/search_edittext_bookname"
+                            android:layout_width="match_parent"
+                            android:layout_height="35dp"
+                            android:background="@android:color/transparent"
+                            android:gravity="center_vertical"
+                            android:hint="Kitap Adı veya ISBN"
+                            android:imeOptions="actionSearch"
+                            android:inputType="text"
+                            android:maxLines="1"
+                            android:paddingLeft="17dp"
+                            android:paddingRight="17dp"
+                            android:textCursorDrawable="@drawable/cursor_color"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|right"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:id="@+id/search_image_clearsearchtext"
+                            android:layout_width="40dp"
+                            android:layout_height="35dp"
+                            android:padding="12dp"
+                            android:src="@drawable/ic_clear"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/search_image_search"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:padding="15dp"
+                    android:scaleType="centerInside"
+                    app:srcCompat="@drawable/ic_search" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/blue_border_rounded_grey"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:id="@+id/search_linear_sort"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/search_image_sort"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="12.5dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_sort2" />
+
+                    <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="SIRALA"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_linear_sortfilter_ayrac"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="#5C5C5C"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/search_linear_filter"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/search_image_filter"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="12.5dp"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/ic_filter" />
+
+                    <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="DETAYLI ARAMA"
+                        android:textColor="@android:color/black" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="4dp">
+
+                <ListView
+                    android:id="@+id/search_listview"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/search_linear_nullsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/ic_notfound1" />
+
+                    <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="Eşleşen Sonuç Bulunamadı!"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="22.5sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_linear_history"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Arama Geçmişi"
+                        android:textColor="@android:color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                    <ListView
+                        android:id="@+id/search_listview_history"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:visibility="visible" />
+
+                    <LinearLayout
+                        android:id="@+id/search_linear_nullhistory"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            app:srcCompat="@drawable/ic_notfound1" />
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="25dp"
+                            android:text="Arama Geçmişi Bulunamadı!"
+                            android:textAlignment="center"
+                            android:textColor="@android:color/black"
+                            android:textSize="22.5sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/search_linear_loading"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activityuser_linear_frag3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Yorumlarım"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:id="@+id/mycomment_linear_nullsearch"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:srcCompat="@drawable/ic_notfound1" />
+
+                    <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:text="Yorum Bulunamadı!"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="22.5sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mycomment_linear_progress"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+
+                    <ProgressBar
+                        android:id="@+id/progressBar2"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/activityuser_listview_mycomments"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:visibility="gone"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/activityuser_linear_frag4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorPrimaryDark"
+                android:gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="Profilim"
+                        android:textColor="@android:color/white"
+                        android:textSize="17dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="15dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/activityuser_image_profile"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:padding="4dp"
+                    android:src="@drawable/ic_male"
+                    app:civ_border_color="@android:color/black"
+                    app:civ_border_width="1dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="left|center"
+                    android:orientation="vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                        android:id="@+id/activityuser_text_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="İsim Soyisim"
+                        android:textColor="@android:color/black"
+                        android:textSize="20sp" />
+
+                    <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                        android:id="@+id/activityuser_text_gender"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cinsiyet"
+                        android:textColor="@android:color/black"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="15dp"
+                            android:text="E-Posta: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="15dp"
+                            android:text="Telefon: "
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:id="@+id/activityuser_text_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:paddingTop="15dp"
+                            android:text="..."
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                        <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                            android:id="@+id/activityuser_text_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:paddingTop="15dp"
+                            android:text="..."
+                            android:textColor="@android:color/black"
+                            android:textSize="17sp" />
+
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    tools:gravity="center">
+
+                    <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                        android:id="@+id/activityuser_button_update"
+                        android:layout_width="wrap_content"
+                        android:layout_height="50dp"
+                        android:background="@drawable/blue_fill_rounded_color"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:text="Bilgileri Güncelle"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                    <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                        android:id="@+id/activityuser_button_logout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/blue_border_rounded_red"
+                        android:paddingLeft="25dp"
+                        android:paddingRight="25dp"
+                        android:text="Oturumu Kapat"
+                        android:textColor="@android:color/white"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:orientation="vertical">
+
+
+        <me.ibrahimsn.lib.SmoothBottomBar
+            android:id="@+id/bottomBar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:backgroundColor="@color/colorPrimary"
+            app:menu="@menu/menu_bottombar_items" />
+    </LinearLayout>
+
+</LinearLayout>

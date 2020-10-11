@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.furkanyilmaz.kitapoyla">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".generalactivity.ActivityBookInfo"></activity>
+        <activity android:name=".user.ActivityUserUpdate" />
+        <activity android:name=".user.ActivityUser" />
+        <activity
+            android:name=".admin.add_update.Activity_AddBook"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".ActivitySplash"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".admin.AdminActivity"
+            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+        <activity
+            android:name=".ActivityLogin"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ActivityRegister"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".generalactivity.ActivityBookComments"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+    </application>
+
+</manifest>

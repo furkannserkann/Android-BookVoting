@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_users">
+
+    <fragment
+        android:id="@+id/nav_users"
+        android:name="com.furkanyilmaz.kitapoyla.admin.fragments.UsersFragment"
+        android:label="@string/menu_users"
+        tools:layout="@layout/just_listview" >
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_books"
+        android:name="com.furkanyilmaz.kitapoyla.admin.fragments.BookFragment"
+        android:label="@string/menu_books"
+        tools:layout="@layout/just_listview" />
+
+    <fragment
+        android:id="@+id/nav_categories"
+        android:name="com.furkanyilmaz.kitapoyla.admin.fragments.CategoriesFragment"
+        android:label="@string/menu_categories"
+        tools:layout="@layout/fragment_listview_fab" />
+
+    <fragment
+        android:id="@+id/nav_publisher"
+        android:name="com.furkanyilmaz.kitapoyla.admin.fragments.PublisherFragment"
+        android:label="@string/menu_publisher"
+        tools:layout="@layout/fragment_listview_fab" />
+</navigation>

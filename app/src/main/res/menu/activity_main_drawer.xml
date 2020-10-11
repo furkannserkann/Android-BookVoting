@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:id="@+id/menu_top"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_users"
+            android:icon="@drawable/menu_users"
+            android:title="@string/menu_users" />
+        <item
+            android:id="@+id/nav_books"
+            android:icon="@drawable/menu_books"
+            android:title="@string/menu_books" />
+        <item
+            android:id="@+id/nav_categories"
+            android:icon="@drawable/menu_categories"
+            android:title="@string/menu_categories" />
+        <item
+            android:id="@+id/nav_publisher"
+            android:icon="@drawable/menu_publisher"
+            android:title="@string/menu_publisher" />
+    </group>
+
+    <group android:id="@+id/menu_bottom"
+        android:checkableBehavior="none">
+
+<!--        <item-->
+<!--            android:id="@+id/nav_profile"-->
+<!--            android:icon="@drawable/profile"-->
+<!--            android:title="Profil" />-->
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Çıkış" />
+    </group>
+</menu>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kitabını Oyla</string>
+    <string name="title_activity_login">Giriş</string>
+    <string name="title_activity_register">Kayıt Ol</string>
+
+    <string name="email">Email</string>
+    <string name="password">Şifre</string>
+    <string name="login">Giriş</string>
+    <string name="forgot_password">ŞİFREMİ UNUTTUM</string>
+    <string name="not_a_member">Üye Değil misin?</string>
+    <string name="or">veya</string>
+    <string name="sign_up">Kaydol</string>
+
+    <string name="name_surname">İsim Soyisim</string>
+    <string name="name">İsim</string>
+    <string name="surname">Soyisim</string>
+    <string name="phone_number">Telefon Numarası</string>
+    <string name="register">Kaydol</string>
+    <string name="are_you_already_a_member">Zaten Üye misin?</string>
+    <string name="sign_in">Oturum Aç</string>
+
+    <string name="usebyemail">E-posta adresi zaten başka bir hesap tarafından kullanılıyor</string>
+    <string name="registering_user">Yeni Kullanıcı Kaydediliyor!</string>
+    <string name="registration_completed">Kayıt İşlemi Tamamladı</string>
+    <string name="upload_image_failed">Resim Yüklenemedi</string>
+    <string name="completing_the_registration_process">Kayıt İşlemi Tamamlanıyor</string>
+
+
+    <string name="title_activity_admin">AdminActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Ayarlar</string>
+    <string name="change">Düzenle</string>
+    <string name="delete">Sil</string>
+
+    <string name="menu_analytics">Analiz</string>
+    <string name="menu_users">Kullanıcı</string>
+    <string name="menu_books">Kitap</string>
+    <string name="menu_categories">Kategori</string>
+    <string name="menu_publisher">Yayın Evi</string>
+
+    <string name="authority">Yetki</string>
+
+    <string name="male">BAY</string>
+    <string name="female">BAYAN</string>
+
+    <string name="category_name">Kategori İsmi</string>
+    <string name="publisher_name">Yayın Evi Adı</string>
+    <string name="category_with_this_name">Bu İsimde Kategori Mevcut</string>
+
+    <string name="save">Kaydet</string>
+    <string name="isbn">ISBN</string>
+    <string name="publish_date">Yayın Tarihi</string>
+    <string name="publisher">Yayın Evi</string>
+    <string name="pageNumber">Sayfa Sayısı</string>
+    <string name="information">Açıklama</string>
+    <string name="authors_hint">Yazarlar (örn; Ekin Çaglar, Beren Yakın)</string>
+    <string name="categories_hint">Kategoriler</string>
+    <string name="add_new_category">Yeni Kategori Oluştur</string>
+    <string name="category_information">Kategori Bilgileri</string>
+    <string name="change_category">Kategori İsmini Değiştir</string>
+    <string name="add_new_publisher">Yeni Yayın Evi Oluştur</string>
+    <string name="change_publisher">Yayın Evi İsmini Değiştir</string>
+    <string name="image">Resim</string>
+    <string name="star_rate">Yıldız Oranı</string>
+
+    <string name="select_image">Resim Seç</string>
+    <string name="add_book">Yeni Kitap Ekle</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_user2">MainActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+</resources>

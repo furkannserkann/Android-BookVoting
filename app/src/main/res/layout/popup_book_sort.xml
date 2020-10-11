@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:padding="11dp"
+                    app:srcCompat="@drawable/ic_sort2" />
+
+                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                    android:id="@+id/popupcategory_text_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sırala"
+                    android:paddingTop="7dp"
+                    android:paddingBottom="7dp"
+                    android:paddingLeft="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginBottom="23dp"
+                android:background="@android:color/darker_gray"
+                android:orientation="vertical" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/sortbook_relative_onerilen"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+            <!-- INPUT -->
+            <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                android:id="@+id/sortbook_text_onerilen"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Son Eklenenler"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:gravity="center"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sortbook_relative_com_az"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.7dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+            <!-- INPUT -->
+            <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                android:id="@+id/sortbook_text_comaz"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:text="Yorum Sayısı Çoktan Aza"
+                android:textColor="@android:color/black"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:clickable="false"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sortbook_relative_com_za"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12.7dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+            <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                android:id="@+id/sortbook_text_comza"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Yorum Sayısı Azdan Çoka"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sortbook_relative_puan_az"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12.7dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+            <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                android:id="@+id/sortbook_text_puanaz"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Yıldız Puanı Çoktan Aza"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/sortbook_relative_puan_za"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="12.7dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center"
+            android:background="@drawable/blue_border_rounded_cornwe">
+
+            <!-- INPUT -->
+
+            <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                android:id="@+id/sortbook_text_puanza"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:background="@android:color/transparent"
+                android:clickable="false"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Yıldız Puanı Azdan Çoka"
+                android:textColor="@android:color/black"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/register_relative_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="15dp"
+            android:paddingTop="12.7dp"
+            android:paddingRight="15dp"
+            android:paddingBottom="15dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:orientation="horizontal"
+                android:gravity="center">
+
+                <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                    android:id="@+id/booksort_button_exit"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/blue_border_rounded_orange"
+                    android:text="İptal" />
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

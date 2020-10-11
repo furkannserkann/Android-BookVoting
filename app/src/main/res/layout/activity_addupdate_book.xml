@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".admin.add_update.Activity_AddBook">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:focusableInTouchMode="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingTop="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/addbook_relative_image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <com.makeramen.roundedimageview.RoundedImageView
+                        android:id="@+id/addbook_image"
+                        android:layout_width="85dp"
+                        android:layout_height="85dp"
+                        app:riv_corner_radius="10dp"
+                        app:riv_border_color="#000000"
+                        app:riv_border_width="3dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/default_book" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                        android:id="@+id/addbook_button_selecimage"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/blue_fill_rounded_color"
+                        android:text="@string/select_image"
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/addbook_relative_isbn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+                <com.furkanyilmaz.customfonts.EditText_Poppins_Regular
+                    android:id="@+id/addbook_text_isbn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/isbn"
+                    android:inputType="numberSigned"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addbook_relative_name"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+                <com.furkanyilmaz.customfonts.EditText_Poppins_Regular
+                    android:id="@+id/addbook_text_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@android:color/transparent"
+                    android:hint="@string/name"
+                    android:maxLines="1"
+                    android:textCursorDrawable="@drawable/cursor_color"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/addbook_relative_publishdate"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:orientation="horizontal"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="6dp"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:gravity="center_vertical"
+                    android:hint="Basım Yılı: "
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:visibility="visible"/>
+
+                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                    android:id="@+id/addbook_text_publishdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="17dp"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:gravity="center_vertical"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/black"
+                    android:visibility="visible"/>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/addbook_relative_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                    android:id="@+id/addbook_text_publisher"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@android:color/transparent"
+                    android:cursorVisible="false"
+                    android:gravity="center|left"
+                    android:hint="@string/publisher"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addbook_relative_pagenumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+
+                <EditText
+                    android:id="@+id/addbook_text_pagenumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/pageNumber"
+                    android:inputType="numberSigned"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addbook_relative_category"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+
+                <com.furkanyilmaz.customfonts.TextView_Poppins_Regular
+                    android:id="@+id/addbook_text_category"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="50dp"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/categories_hint"
+                    android:textSize="14sp"
+                    android:gravity="center_vertical"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addbook_relative_author"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+
+                <EditText
+                    android:id="@+id/addbook_text_author"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:hint="@string/authors_hint"
+                    android:maxLines="1"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addbook_relative_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="150dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/blue_border_rounded_cornwe">
+
+
+                <EditText
+                    android:id="@+id/addbook_text_info"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="17dp"
+                    android:layout_marginRight="17dp"
+                    android:background="@android:color/transparent"
+                    android:ems="10"
+                    android:gravity="top|start"
+                    android:hint="@string/information"
+                    android:inputType="textMultiLine"
+                    android:paddingTop="15dp"
+                    android:paddingBottom="15dp"
+                    android:minHeight="150dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/addbook_relative_save"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp">
+
+                <com.furkanyilmaz.customfonts.Button_Poppins_Regular
+                    android:id="@+id/addbook_button_save"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/blue_fill_rounded_color"
+                    android:text="@string/save"
+                    android:textColor="@android:color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <item-->
+<!--        android:id="@+id/item_main"-->
+<!--        android:title="Anasayfa"-->
+<!--        android:icon="@drawable/ic_home"/>-->
+
+    <item
+        android:id="@+id/item_search"
+        android:title="Arama"
+        android:icon="@drawable/ic_home"/>
+
+    <item
+        android:id="@+id/item_comments"
+        android:title="Yorumlarım"
+        android:icon="@drawable/ic_comment"/>
+
+    <item
+        android:id="@+id/item_profile"
+        android:title="Profil"
+        android:icon="@drawable/ic_user"/>
+
+</menu>
